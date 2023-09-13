@@ -16,7 +16,29 @@ namespace ProyectoHerencia
             Humano Pepe = new Humano("Pepe");
             Gorila Copito = new Gorila("Copito");
 
+            //Principio de sustitucion #1
+            //Mamiferos animal = new Caballo("Veloz");
+            Mamiferos persona = new Humano("Paco"); //Creamos una instancia llamada persona de tipo Mamifero
 
+            //Principio de sustitucion #2
+            Mamiferos animal = new Mamiferos("Veloz");
+            Caballo Veloz = new Caballo("Veloz");
+            animal = Veloz; //En una variable de tipo mmiferos almaceno una variable de tipo caballo (Caballo es siempre mamifero)
+
+            //Principio de sustitucion #3
+            //Object miAnimal = new Caballo("Veloz");
+            //Object miPersona = new Humano("Juan");
+            //Object miMamifero = new Mamiferos("Wally");
+
+            Mamiferos[] almacenAnimales = new Mamiferos[3];
+            almacenAnimales[0] = Melon;
+            almacenAnimales[1] = Pepe;
+            almacenAnimales[2] = Copito;
+
+            almacenAnimales[1].getnombre();
+
+            /*
+             
             Melon.Galopar();
             Pepe.CuidarCrias();
             Pepe.Pensar();
@@ -25,7 +47,7 @@ namespace ProyectoHerencia
             Melon.getnombre();
             Pepe.getnombre();
             Copito.getnombre();
-
+            */
         }
     }
 
