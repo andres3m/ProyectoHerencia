@@ -19,6 +19,7 @@ namespace ProyectoHerencia
 
             Melon.Galopar();
             Pepe.CuidarCrias();
+            Pepe.Pensar();
             Copito.Trepar();
 
             Melon.getnombre();
